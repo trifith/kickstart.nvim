@@ -252,10 +252,6 @@ require('lazy').setup({
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
   'farmergreg/vim-lastplace', -- reopen files at the last position
 
-  --  'hashivim/vim-terraform', -- terraform-completion dependency
-  --  'vim-syntastic/syntastic', -- terraform-completion dependency
-  --  'juliosueiras/vim-terraform-completion', -- terraform completion with linter
-
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
   -- keys can be used to configure plugin behavior/loading/etc.
@@ -909,7 +905,7 @@ require('lazy').setup({
   -- Transparent nvim
   {
     'xiyaowong/transparent.nvim',
-    priority = 1000,
+    lazy = false,
   },
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
